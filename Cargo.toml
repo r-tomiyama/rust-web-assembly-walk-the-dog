@@ -31,6 +31,8 @@ futures = "0.3.17"
 wasm-bindgen-futures = "0.4.28"
 serde = { version = "1.0.131", features = ["derive"] }
 gloo-utils = { version = "0.1", features = ["serde"] }
+anyhow = "1.0.51"
+async-trait = "0.1.52"
 
 # `wee_alloc` is a tiny allocator for wasm that is only ~1K in code size
 # compared to the default allocator's ~10K. However, it is slower than the default
@@ -49,7 +51,8 @@ features = [
     "CanvasRenderingContext2d",
     "Element",
     "HtmlImageElement",
-    "Response"
+    "Response",
+    "Performance"
 ]
 
 # The `console_error_panic_hook` crate provides better debugging of panics by
